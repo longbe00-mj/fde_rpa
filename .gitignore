@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# 실행 데이터·증거·인증 프로필은 소스와 분리한다 (%LOCALAPPDATA%\LocalRPA)
+.localrpa/
+# 실행 산출물 (리포트·실행 DB·다운로드·평가 화면)은 커밋하지 않는다
+report/
+.localrpa*/
+*.part
+*.tmp

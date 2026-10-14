@@ -1,0 +1,17 @@
+{
+  "app": "LocalRPA Test Form",
+  "app_version": "1.0",
+  "collected_from": "fixtures/windows/test_form_app.py 고정 픽셀 레이아웃 (Per-Monitor DPI v2)",
+  "coordinate_space": "대상 창 클라이언트 영역 기준 물리 픽셀",
+  "window": {
+    "title_regex": "^LocalRPA Test Form$",
+    "class_name": "TkTopLevel"
+  },
+  "client_size": {"width": 520, "height": 300},
+  "points": {
+    "customer_id": {"x": 300, "y": 36},
+    "name": {"x": 300, "y": 86},
+    "phone": {"x": 300, "y": 136},
+    "save_button": {"x": 180, "y": 200}
+  }
+}

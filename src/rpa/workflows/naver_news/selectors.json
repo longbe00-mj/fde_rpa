@@ -1,0 +1,16 @@
+{
+  "site": "네이버 메인 (https://www.naver.com) — 뉴스스탠드 영역의 '언론사편집' 탭",
+  "collected_from": "2026-10-14 실제 페이지 조사 (Edge, 1400x1000, 비로그인). 영역·탭·버튼은 role/접근성 이름, 기사 항목은 CSS 모듈 클래스 접두어(빌드 해시 부분 제외). 좌표 없음",
+  "base_url": "https://www.naver.com",
+  "paths": {"home": "/"},
+  "region": {"role": "region", "name": "뉴스스탠드"},
+  "edit_tab": {"within": {"role": "region", "name": "뉴스스탠드"}, "role": "tab", "name": "언론사편집", "exact": false},
+  "panel": {"within": {"role": "region", "name": "뉴스스탠드"}, "role": "tabpanel"},
+  "next_page": {"within": {"role": "region", "name": "뉴스스탠드"}, "role": "button", "name": "다음 페이지"},
+  "paging": {"within": {"role": "region", "name": "뉴스스탠드"}, "css": "[class*='ContentPagingView-module__content_paging']"},
+  "item_css": "[class*='MediaContentsView-module__media_item']",
+  "title_css": "[class*='MediaContentsView-module__info_title']",
+  "press_css": "[class*='MediaContentsView-module__link_press']",
+  "article_url_pattern": "^https://n\\.news\\.naver\\.com/article/\\d+/\\d+",
+  "page_indicator_pattern": "(\\d+)\\s*페이지[^/]*/\\s*(\\d+)"
+}

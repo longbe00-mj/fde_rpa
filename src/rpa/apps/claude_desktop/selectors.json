@@ -1,0 +1,27 @@
+{
+  "app": "Claude desktop (MSIX, Electron)",
+  "app_version": "2.37337.1.0",
+  "verified_versions": {
+    "2.31226.1.0": "조사 시작 시 버전 (조사 도중 앱이 자동 업데이트됨)",
+    "2.37337.1.0": "2026-10-14 end-to-end 실행 CLAUDE-001 통과 (새 대화·입력 readback·전송·완료 판정·응답 복사)"
+  },
+  "collected_at": "2026-10-14",
+  "collected_from": "실제 앱 화면 조사 (새 대화 → 테스트 메시지 1건 전송 → 생성 중/완료 화면 캡처, 기준 이미지 교차 검증)",
+  "environment": {"dpi": 120, "scale_percent": 125, "theme": "light", "language": "ko", "client_size": [1920, 1140]},
+  "note": "UIA로는 창 테두리 버튼만 노출됨 (renderer 접근성 비활성). 화면 기반으로 조작한다.",
+  "window": {
+    "process_name": "claude.exe",
+    "class_name": "Chrome_WidgetWin_1",
+    "title_regex": "^Claude$"
+  },
+  "activation_point": {"x_fraction": 0.5, "y": 16, "comment": "상단 커스텀 제목 줄의 빈 드래그 영역 (단일 클릭만)"},
+  "shortcuts": {"new_chat": ["ctrl", "n"], "send": ["enter"], "newline": ["shift", "enter"]},
+  "templates": {
+    "new_chat_placeholder": {"file": "assets/new_chat_placeholder.png", "meaning": "빈 새 대화 입력창 ('오늘 어떤 도움을 드릴까요?')"},
+    "mode_chat_selected": {"file": "assets/mode_chat_selected.png", "meaning": "입력창 아래 모드 전환에서 '채팅' 선택됨 (Cowork 아님)"},
+    "stop_button": {"file": "assets/stop_button.png", "meaning": "응답 생성 중 (입력창 오른쪽 중지 버튼)"},
+    "action_bar": {"file": "assets/action_bar.png", "meaning": "응답 완료 후 아이콘 줄 (복사·읽기·좋아요·싫어요·다시 시도)",
+                   "copy_offset": {"dx": -60, "dy": 0}}
+  },
+  "editor_from_mode_toggle": {"dx": 60, "dy": -71, "comment": "입력 후(placeholder 사라짐) 편집기 클릭 지점: '채팅' 모드 전환 중심(870,608) → 편집기 첫 줄(930,537)"}
+}

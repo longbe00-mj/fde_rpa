@@ -1,0 +1,34 @@
+{
+  "site": "LocalRPA 테스트 업무 포털 (fixtures/web/portal_site.py)",
+  "collected_from": "포털 페이지의 label/role/data-testid (접근성 이름 기준, 좌표 없음)",
+  "paths": {
+    "customers": "/customers",
+    "customer_detail": "/customers/{customer_id}",
+    "record_new": "/records/new?customer_id={customer_id}",
+    "records_by_customer": "/records?customer_id={customer_id}"
+  },
+  "login_ready": {"role": "heading", "name": "고객 조회"},
+  "search": {
+    "input": {"label": "고객 검색"},
+    "button": {"role": "button", "name": "검색"},
+    "table": {"role": "table", "name": "고객 목록"}
+  },
+  "detail": {
+    "heading": {"role": "heading", "name": "고객 상세"},
+    "name": {"test_id": "customer-name"},
+    "phone": {"test_id": "customer-phone"},
+    "memo": {"frame_title": "메모", "test_id": "memo"},
+    "export": {"role": "link", "name": "내보내기"}
+  },
+  "register": {
+    "heading": {"role": "heading", "name": "접수 등록"},
+    "customer_id": {"label": "고객ID"},
+    "name": {"label": "이름"},
+    "phone": {"label": "전화"},
+    "memo": {"label": "메모"},
+    "attachment": {"label": "첨부"},
+    "submit": {"role": "button", "name": "등록"},
+    "record_id": {"test_id": "record-id"},
+    "records_table": {"role": "table", "name": "접수 목록"}
+  }
+}
